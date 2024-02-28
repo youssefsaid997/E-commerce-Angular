@@ -1,0 +1,10 @@
+<!-- seo -->
+<form [formGroup]="updateUserFrom" (submit)="onSubmit($event)">
+
+<app-form-input [control]="updateUserFrom.controls.username" [label]="'Username'"></app-form-input>
+<app-form-input [control]="updateUserFrom.controls['password']" [label]="'Password'"></app-form-input>
+<div>
+    <button class="btn btn-danger">Submit</button>
+</div>
+
+</form>

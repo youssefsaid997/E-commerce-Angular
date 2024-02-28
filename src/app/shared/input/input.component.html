@@ -1,0 +1,10 @@
+<div>
+    <label>{{label}}</label>
+    <input [type]="inputType" [formControl]="control" [placeholder]="inputPlaceholder">
+
+    <ng-container *ngIf="((control.touched || control.dirty)&& control.invalid)">
+        <p *ngIf="control.errors && control.errors['required'] ">
+            value is required
+        </p>
+    </ng-container>
+</div>

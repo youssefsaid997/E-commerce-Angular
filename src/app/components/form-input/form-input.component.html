@@ -1,0 +1,17 @@
+<div class="form-group">
+  <label class="d-block" for="">{{label}}</label>
+  <input
+    [formControl]="control"
+    [type]="inputType"
+    [placeholder]="placeHolder"
+  />
+</div>
+
+<!-- error messages -->
+<ng-container *ngIf="control.errors && control.touched">
+  <p *ngIf="control.errors['required'] && control.touched">
+    this value is required
+  </p>
+
+
+</ng-container>

@@ -1,0 +1,17 @@
+<form [formGroup]="createProduct">
+  <app-input
+    [control]="createProduct.controls['productName']"
+    [label]="'Product Name'"
+    [inputPlaceholder]="'Samsung A24'"
+  />
+  <app-input
+    [control]="createProduct.controls['price']"
+    [label]="'Product Price'"
+    [inputPlaceholder]="'$20.99'"
+  />
+  <app-input
+    [control]="createProduct.controls['rating']"
+    [label]="'Rating'"
+    [inputPlaceholder]="'3'"
+  />
+</form>
